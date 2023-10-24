@@ -137,6 +137,7 @@
     <ClCompile Include="src\v3\v3_z03.cpp" />
     <ClCompile Include="src\v3\v3_z04.cpp" />
     <ClCompile Include="src\v3\v3_z05.cpp" />
+    <ClCompile Include="src\v3\v3_z06.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -145,6 +146,8 @@
     <None Include="shader\v3\z02.vert" />
     <None Include="shader\v3\z04.frag" />
     <None Include="shader\v3\z04.vert" />
+    <None Include="shader\v3\z06.frag" />
+    <None Include="shader\v3\z06.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\shader_util.h" />

@@ -70,8 +70,8 @@ int v3_z05() {
 
 		// Move player and wrap to other side.
 
-		player_x += (glfwGetKey(win, GLFW_KEY_RIGHT) - glfwGetKey(win, GLFW_KEY_LEFT)) * 0.025f;
-		player_y -= (glfwGetKey(win, GLFW_KEY_DOWN) - glfwGetKey(win, GLFW_KEY_UP)) * 0.025f;
+		player_x += (glfwGetKey(win, GLFW_KEY_D) - glfwGetKey(win, GLFW_KEY_A)) * 0.025f;
+		player_y -= (glfwGetKey(win, GLFW_KEY_S) - glfwGetKey(win, GLFW_KEY_W)) * 0.025f;
 
 		if (player_x > 1.0f) {
 			player_x = -1.0f;

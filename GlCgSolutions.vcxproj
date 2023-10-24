@@ -133,11 +133,13 @@
     <ClCompile Include="src\templates\template_01.cpp" />
     <ClCompile Include="src\util\shader_util.cpp" />
     <ClCompile Include="src\v3\v3_z01.cpp" />
+    <ClCompile Include="src\v3\v3_z02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="shader\v3\z01.vert" />
     <None Include="shader\v3\z01.frag" />
+    <None Include="shader\v3\z02.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\util\shader_util.h" />

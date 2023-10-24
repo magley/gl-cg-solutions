@@ -1,5 +1,5 @@
 #include "v3/v3.h"
 
 int main() {
-	return v3_z01();
+	return v3_z02();
 }

@@ -25,9 +25,15 @@ int v3_z02() {
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 	glewInit();
 
+	// All verticies in the buffers assume (0, 0) is the center of their mesh.
+	// Because we use glViewport to draw the "left side" and the "right side",
+	// this is fine. It's essentially tricking opengl into changing what the
+	// "center" is. We could've baked the coordinates in the two buffers below
+	// and not use glViewport.
+
 	// One stripe of the flag, taking up 1 width and 1/3 height.
-	// VBO only, no VAO.
-	// Colors are passed as uniforms because it's easier. 
+	// Don't use EBO, it's just more code for a marginal optimization.
+	// Colors are passed as uniforms (uni_color) because it's easier. 
 
 	const float width = 1.0f;
 	const float height = 1 / 3.0f;
@@ -86,7 +92,7 @@ int v3_z02() {
 	while (!glfwWindowShouldClose(win)) {
 		glfwPollEvents();
 		glClearColor(1.0f, 1.0f, 1.0f, 1.0); // Because we clear with "white", we
-		// don't have to draw the 3rd stripe or the the back part of Japan's flag.
+		// don't have to draw the 3rd stripe, or the the back part of Japan's flag.
 		glClear(GL_COLOR_BUFFER_BIT);
 
 		glUseProgram(shader);
@@ -98,11 +104,11 @@ int v3_z02() {
 
 		glUniform2f(uni_offset, 0.0f, height * 2);
 		glUniform3f(uni_color, 1.0f, 0.0f, 0.0f);
-		glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDrawArrays(GL_TRIANGLES, 0, 6); // Red stripe
 
 		glUniform2f(uni_offset, 0.0f, 0);
 		glUniform3f(uni_color, 0.0f, 0.0f, 1.0f);
-		glDrawArrays(GL_TRIANGLES, 0, 6);
+		glDrawArrays(GL_TRIANGLES, 0, 6); // Blue stripe
 
 		// Right side.
 

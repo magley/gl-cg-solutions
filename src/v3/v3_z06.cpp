@@ -72,7 +72,7 @@ int v3_z06() {
 
 		// ---------- Game logic --------------------------------
 
-		// Move player and wrap to other side.
+		// Move player.
 
 		player_x += (glfwGetKey(win, GLFW_KEY_D) - glfwGetKey(win, GLFW_KEY_A)) * 0.025f;
 		player_y -= (glfwGetKey(win, GLFW_KEY_S) - glfwGetKey(win, GLFW_KEY_W)) * 0.025f;
@@ -81,7 +81,7 @@ int v3_z06() {
 
 		if (glfwGetKey(win, GLFW_KEY_R)) {
 			player_x = -0.5;
-			player_y = -0.5;
+			player_y = +0.5;
 		}
 
 		// If player touches bottom-right corner, exit.

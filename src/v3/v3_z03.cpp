@@ -29,9 +29,11 @@ int v3_z03() {
 
 	// 1 VBO for a horizontal rect
 	// 1 VBO for a vertical rect
+	// We draw the outer edges as 2 horizontal and 2 vertical rects.
+	// You could also make 1 VBO for the whole "inverted rectangle".
 	// 1 VBO for a letter.
 	
-	const float narrow = (1.0f / 6.0f); // width = 1/3 width of a quadrant which is 1/2 of the window so 1/6).
+	const float narrow = (1.0f / 6.0f); // 1/3 the width of a quadrant (which is 1/2 of the window) is 1/6.
  	const float wide = 1.0f;
 	float vertices_hor[] = {
 		//	x				y
@@ -63,8 +65,8 @@ int v3_z03() {
 	};
 
 	enum { HOR, VER, LETTER };
-	unsigned int VBO[3];
-	unsigned int VAO[3];
+	unsigned int VBO[3]; // Just for fun. All VBOs and VAOs are in arrays.
+	unsigned int VAO[3]; // So instead of VBO_hor, it's VBO[HOR].
 
 	glGenBuffers(3, VBO);
 	glGenVertexArrays(3, VAO);
@@ -125,7 +127,7 @@ int v3_z03() {
 		glUniform2f(uni_offset, -(1 - narrow), 0.0f);
 		glDrawArrays(GL_TRIANGLES, 0, 6);
 
-		// Letter
+		// Letter.
 
 		glBindVertexArray(VAO[LETTER]);
 		glUniform3f(uni_color, 0.0f, 0.0f, 1.0f);

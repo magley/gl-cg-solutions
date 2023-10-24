@@ -85,8 +85,9 @@ int v3_z04() {
 	unsigned uni_offset = glGetUniformLocation(shader, "uni_offset");
 	unsigned uni_color = glGetUniformLocation(shader, "uni_color");
 
-	float player_x = 0, player_y = 0;
+	// Moving square's state.
 
+	float player_x = 0, player_y = 0;
 	float player_line_width = 1.0f;
 	float player_opacity = 0.5f;
 	int player_draw_mode = GL_TRIANGLES;

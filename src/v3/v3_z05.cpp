@@ -1,10 +1,12 @@
 /*
+
 Napisati fullscreen aplikaciju koja prikazuje crvenu tacku na centru ekrana 
 (Tacka je veæa od 1 piksela) koja moze da se pomijera po ekranu pomocu WSAD 
 tastera, a ukoliko izadje izvan ekrana, pojavljuje se na suprotnoj ivici. Boja 
 tacke pulsira od crvene do zute tokom vremena, i pulsira brze što je dalja od 
 koordinatnog pocetka. Tacka ostavlja trag trenutne boje za sobom. Taster ESC 
 zatvara program. Taster R brise ekran i resetuje tacku na koordinatni pocetak.
+
 */
 
 

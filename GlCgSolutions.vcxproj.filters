@@ -30,6 +30,9 @@
     <ClCompile Include="src\v3\v3_z02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\v3\v3_z03.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -136,6 +136,7 @@
     <ClCompile Include="src\v3\v3_z02.cpp" />
     <ClCompile Include="src\v3\v3_z03.cpp" />
     <ClCompile Include="src\v3\v3_z04.cpp" />
+    <ClCompile Include="src\v3\v3_z05.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

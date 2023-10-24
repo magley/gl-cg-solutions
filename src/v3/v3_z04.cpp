@@ -159,7 +159,7 @@ int v3_z04() {
 		glDrawArrays(GL_LINE_LOOP, 0, 5);
 		glLineWidth(1.0); // Just in case.
 
-		// Square (since it's in front of the star, it must be drawn after the star (painter's algorithm).
+		// Square (since it's in front of the star, it must be drawn after the star (painter's algorithm)).
 
 		glBindVertexArray(VAO_square);
 		glUniform4f(uni_color, 0.85f, 0.95f, 0.125f, player_opacity);

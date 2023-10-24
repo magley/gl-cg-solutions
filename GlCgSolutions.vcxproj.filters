@@ -33,12 +33,17 @@
     <ClCompile Include="src\v3\v3_z03.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\v3\v3_z04.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <None Include="shader\v3\z01.vert" />
     <None Include="shader\v3\z01.frag" />
     <None Include="shader\v3\z02.vert" />
+    <None Include="shader\v3\z04.vert" />
+    <None Include="shader\v3\z04.frag" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\v3\v3.h">

@@ -6,3 +6,5 @@ int v3_z03();
 int v3_z04();
 int v3_z05();
 int v3_z06();
+int v3_z07();
+int v3_z08();

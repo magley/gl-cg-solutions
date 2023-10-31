@@ -42,6 +42,12 @@
     <ClCompile Include="src\v3\v3_z06.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\v3\v3_z07.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\v3\v3_z08.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
